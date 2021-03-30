@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title> PHP curriculum short intro </title>
+  <style>
+    h2 {
+      color:black !important;
+      font-size: 17px !important;
+    }
+    #you_wish {
+      font-weight: bold;
+    }
+    details{
+      margin-bottom: 16px;
+    }
+    details p {
+      margin-left: 14px;
+    }
+  </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-left: 20px;">
+      <a class="navbar-brand" href="index.html"><img src="assets/images/favicon.ico" alt="home" width="50" height="50"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link important" href="donate.html">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="exercises.html">Exercises</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quiz.html">Quiz</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link important dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Choose path
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="webIntro.html">web dev intro - basics</a>
+            <a class="dropdown-item" href="javascript.html">JavaScript development</a>
+            <a class="dropdown-item" href="phpLong.html">PHP long intro</a>
+            <a class="dropdown-item" href="phpShort.html">PHP short intro</a>
+          </div>
+        </li>
+
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="resources.html">Resources</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+  <!--   long introduction, DEEP UNDERSTANDING  -->
+
+  <br><br>
+  <section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
+    <div class="mobile text-center">
+      <h2> The mentor i wish i had</h2>
+      <p id="you_wish">You wish you found us earlier.</p>
+      <br>
+    <h2 style="font-size:30px !important; color:black !important" class="mb-3"> PHP Web Development with short introduction curriculum</h2>
+    </div>
+  <ul class="cd-faq__categories">
+  <li><a  class="cd-faq__category truncate" href="#first_things_first"> First things first </a></li>
+
+  <li><a class="cd-faq__category truncate" href="#free_mentor"> Get a free mentor </a></li>
+  <li><a  class="cd-faq__category truncate" href="HTML_CSS_JS"> HTML and CSS </a></li>
+  <li><a  class="cd-faq__category truncate" href="#JAVASCRIPT"> JAVASCRIPT </a></li>
+  <li><a  class="cd-faq__category truncate" href="#BOOTSTRAP"> BOOTSTRAP </a></li>
+  <li><a  class="cd-faq__category truncate" href="#GIT"> GIT </a></li>
+  <li><a  class="cd-faq__category truncate" href="#SEO"> SEO </a></li>
+  <li><a  class="cd-faq__category truncate" href="#PHP">PHP</a></li>
+  <li><a  class="cd-faq__category truncate" href="#MYSQL">MYSQL</a></li>
+  <li><a  class="cd-faq__category truncate" href="#php_framework"> Framework: Laravel </a></li>
+  <li><a  class="cd-faq__category truncate" href="#coding_challenge_platforms">Coding Challenge Platforms</a></li>
+  <li><a  class="cd-faq__category truncate" href="#cool_things">Cool things</a></li>
+  <li><a  class="cd-faq__category truncate" href="#job_part"> Job part </a></li>
+  <li><a class="cd-faq__category truncate" href="#other_things"> Besides programming </a></li>
+  </ul> <!-- cd-faq__categories -->
+
+  <div class="cd-faq__items">
+<div class="text-center desktop">
+  <h2> The mentor i wish i had</h2>
+  <p id="you_wish">You wish you found us earlier.</p>
+  <br>
+    <h2 style="font-size:30px !important; color:black !important"> PHP Web Development with short introduction curriculum </h2>
+
+</div>
+
+  <ul id="first_things_first" class="cd-faq__group">
+  <li class="cd-faq__title"><h2>Before starting</h2></li>
+
+  <li class="cd-faq__item">
+
+    <a target="_blank" class="cd-faq__trigger" href="#0"><span>   About this course </span></a>
+    <div class="cd-faq__content">
+      <div class="text-component">
+
+        <details>
+            <summary> about </summary>
+            <p> This course is generally about building websites and applications using php and some of the most important related technologies, such as html,css, javascript and mysql. </p>
+            <p> We have made this path by pulling the best resources from around the web and combining them in a unique way, to help ease this incredible journey for you. </p>
+            <p>Now, as some of you may know, php is not the only programming language or technology that can be used on the server, there are many more(python,c#..), but php is easy to learn, has a great community etc. </p>
+        </details>
+
+        <details>
+            <summary> prerequisites </summary>
+            <p> You need to know English :D, have a basic knowledge of computers, how to type et cetera.  No big deal, if you know some of the things below feel free to skip them.</p>
+        </details>
+
+        <details>
+            <summary>what should i know after this</summary>
+            <p> After completing most of the stuff that is in our curriculum and of course, doing the coding part yourself, you will be able to build static and dynamic websites,to build stuff like login systems, simple social media sites, basics of command line use and so on. </p>
+        </details>
+
+        <details>
+            <summary>how much time to complete</summary>
+            <p> Obviously it depends on how much time you spend each day blabla,but rougly speaking, but if you spend about 3.5 hours each day on learning and coding, it shouldn't take much more than 10-11 months to complete most of this course </p>
+        </details>
+
+      </div>
+    </div> <!-- cd-faq__content -->
+  </li>
+
+  <li class="cd-faq__item">
+    <a class="cd-faq__trigger" href="#0"><span>   <img
+          src="assets/images/undraw_Web_search_re_efla.svg"
+          alt="some random tech svn image"
+          height="60"
+          width="60" /> How to Google like a pro</span></a>
+    <div class="cd-faq__content">
+      <div class="text-component">
+
+        <details>
+            <summary>why this lesson</summary>
+            <p>Using the search engines such as Google,Opera,Mozilla etc. ,the right way and finding the most relevant results for your query is one of the most important and easy skills to learn in the 21.century and you,as a future software developer, will benefit greatly from learning it</p>
+        </details>
+
+        <details>
+            <summary>what should i know after this</summary>
+            <p> After finishing this section about searching online, you should be able to google like a pro:) </p>
+        </details>
+
+        <details>
+            <summary>Assignment</summary>
+              <p >Learn the basics of command prompt, google it and find it yourself, you should know things like how to make a directory, navigate with cmd, rename a file etc  </p>
+         </details>
+
+        <p><a target="_blank" href="https://www.youtube.com/watch?v=R0DQfwc72PM&ab_channel=EpicTutorialsforiOS%26AndroidFilmmaking"  rel=”noreferrer”> <i class="fab fa-youtube"></i> How To Google Like A Pro! Top 10 Google Search Tips & Tricks 5:40</a> </p>
+        <p><a target="_blank" href="https://denic.hashnode.dev/use-google-like-a-pro?guid=none&deviceId=f5082b83-4f93-4f46-b798-a5ac621e873d"  rel=”noreferrer”> <i class="fas fa-pencil-alt"></i> use google like a pro</a></p>
+
+      </div>
+    </div> <!-- cd-faq__content -->
+  </li>
+
+  <li class="cd-faq__item">
+    <a class="cd-faq__trigger" href="#0"><span>   <img
+          src="assets/images/undraw_Mobile_app_re_catg.svg"
+          alt="some random tech svn image"
+          height="60"
+          width="60" /> Something about mistakes and how to learn</span></a>
+    <div class="cd-faq__content">
+      <div class="text-component">
+        <p> One of the coolest things i learned is, before even starting a new field is to just research what are some of the biggest mistakes people make when doing something related to that field.. </p>
+        <details>
+            <summary>why this lesson</summary>
+            <p> It will really save you a lot of time</p>
+        </details>
+
+        <details>
+            <summary>what should i know after this</summary>
+            <p> Exactly what to do and how to approach learning this field </p>
+        </details>
+
+
+        <details>
+            <summary>summary of this section</summary>
+            <p>Basically, the summary of the things below: don't just watch or read the tutorials, do something with your knowledge or you will forget everyting. Build something, always code, make it a habit, sleep well, eat healthy and exercise.  </p>
+            <p>  There is no need to memorize code that much, learn to understand, it is normal to use stackoverflow and docs a lot , we all do it :) </p>
+        </details>
+
+
+        <p> <a target="_blank" href="https://www.youtube.com/watch?v=GiUDWx9NpMU&ab_channel=AndySterkowitz"  rel=”noreferrer”> <i class="fab fa-youtube"></i> Teaching yourself to learn programming? Start Here! | Andy Sterkowitz 10:00</a></p>
+        <p> <a target="_blank" href="https://www.youtube.com/watch?v=afop7R5h5vw&ab_channel=AndySterkowitz"  rel=”noreferrer”> <i class="fab fa-youtube"></i> How to ACTUALLY LEARN using programming tutorials! | Andy Sterkowitz 13:50</a></p>
+        <p> <a target="_blank" href="https://www.youtube.com/watch?v=kedlCFBoKM8&ab_channel=StefanMischook" ><i class="fab fa-youtube"></i> Get out of Code Tutorial Hell now, and Get a Job! | Stefan Mischook  13:30 </a></p>
+        <p> <a target="_blank" href="https://www.youtube.com/watch?v=kX2j_A-gujo&ab_channel=StefanMischook" ><i class="fab fa-youtube"></i> What did 25 Years of Code Teach Me? | Stefan Mischook  13:00 </a></p>
+        <p> <a target="_blank" href="https://www.youtube.com/watch?v=QTQGMCx6Sd0&ab_channel=DorianDevelops" ><i class="fab fa-youtube"></i> You'll Never Get A Job By Just "Learning" HTML, CSS & JavaScript | Dorian Develops 5:10</a></p>
+        <p> <a target="_blank" href="https://www.youtube.com/watch?v=SjIeanwpLTc&ab_channel=DorianDevelops" ><i class="fab fa-youtube"></i> title kinda misleading,just watch this :) | Dorian Develops 12:00</a></p>
+        <p> <a target="_blank" href="https://www.youtube.com/watch?v=6ptI5B4a-ag&ab_channel=mayuko"  rel=”noreferrer”> <i class="fab fa-youtube"></i> Best Learning Strategies for Programmers | mayuko 07:50</a></p>          <p> <a target="_blank" href="https://www.youtube.com/watch?v=rfVd-r79OL4&ab_channel=AndySterkowitz" ><i class="fab fa-youtube"></i> The WORST Study Habit for Software Developers | Andy Sterkowitz  07:50 </a></p>
+        <p> <a target="_blank" href="https://www.youtube.com/watch?v=opiRbgDml24&list=WL&index=2&ab_channel=AndySterkowitz" ><i class="fab fa-youtube"></i> 5 Biggest MYTHS of Software Development (for BEGINNERS only) | Andy Sterkowitz  16:10 </a></p>
+        <p> <a target="_blank" href="https://www.codingdojo.com/blog/5-myths-about-how-to-become-a-software-developer#:~:text=To%20learn%20how%20to%20become%20a%20software%20developer%2C%20you%20need,project%20you%20are%20working%20on." ><i class="fas fa-pencil-alt"></i> The Top 6 Myths Holding You Back | codingdojo.com </a></p>
+      </div>
+    </div> <!-- cd-faq__content -->
+  </li>
+
+  <li class="cd-faq__item">
+    <a class="cd-faq__trigger" href="#0"><span>   <img
+          src="assets/images/undraw_Code_review_re_woeb.svg"
+          alt="some random tech svn image"
+          height="60"
+          width="60" /> Best resources to figure out stuff </span></a>
+    <div class="cd-faq__content">
+      <div class="text-component">
+        <p> There are a lot of things in life, career and in this course that you will need to figure out yourself(using just internet and your brain), that is why we will give you a couple of resources that are most often used for doing that. </p>
+        <p><a target="_blank" href="https://stackoverflow.com/"  rel=”noreferrer”> <i class="fas fa-pencil-alt"></i> stackoverflow </a></p>
+        <p>w 3 schools taj fazon</p>
+      </div>
+    </div> <!-- cd-faq__content -->
+  </li>
+
+
+  <li class="cd-faq__item">
+    <a class="cd-faq__trigger" href="#0"><span><img
+          src="assets/images/undraw_Online_learning_re_qw08.svg"
+          alt="some random tech svn image"
+          height="60"
+          width="60" /> Computer science basics</span></a>
+    <div class="cd-faq__content">
+      <div class="text-component">
+         <p> We know you want to get hands-on experience with coding, but there are some basic and general things you ought to know(understand) first, in order to become the best programmer there is.If you are maybe comfortable with the concepts listed below ,feel free to skip this lesson.</p>
+         <p> <a target="_blank" href="https://www.youtube.com/watch?v=P3ZitzEHgKs&list=PLpQQipWcxwt-Q9izCl0mm-QZ4seuBdUtr&index=1&ab_channel=GCFLearnFree.org" ><i class="fab fa-youtube"></i> Computer Science Basics 0:30</a></p>  <br>
+         <p> <a target="_blank" href="https://www.youtube.com/watch?v=vG_qmtdBPTU&list=PLpQQipWcxwt-Q9izCl0mm-QZ4seuBdUtr&ab_channel=GCFLearnFree.org" ><i class="fab fa-youtube"></i> Computer Science Basics: Hardware and Software 1:50 </a></p>  <br>
+         <p> <a target="_blank" href="https://www.youtube.com/watch?v=vG_qmtdBPTU&list=PLpQQipWcxwt-Q9izCl0mm-QZ4seuBdUtr&ab_channel=GCFLearnFree.org" ><i class="fab fa-youtube"></i> Computer Science Basics: Binary 2:20 </a></p>  <br>
+         <p> <a target="_blank" href="https://hackr.io/blog/what-is-programming" ><i class="fas fa-pencil-alt"></i>  What is Programming? </a></p>  <br>
+         <p> <a target="_blank" href="https://hackr.io/blog/what-is-programming-language" ><i class="fas fa-pencil-alt"></i>  What is Programming language? </a></p>  <br>
+         <p> <a target="_blank" href="https://www.youtube.com/watch?v=kM9ASKAni_s&list=PLpQQipWcxwt-Q9izCl0mm-QZ4seuBdUtr&index=4&ab_channel=GCFLearnFree.org" ><i class="fab fa-youtube"></i> Computer Science Basics: Algorithms 2:30 </a></p>  <br>
+         <p> <a target="_blank" href="https://www.youtube.com/watch?v=eSYeHlwDCNA&list=PLpQQipWcxwt-Q9izCl0mm-QZ4seuBdUtr&index=5&ab_channel=GCFLearnFree.org" ><i class="fab fa-youtube"></i> Computer Science Basics: Programming Languages 2:20</a></p>  <br>
+         <p> <a target="_blank" href="https://www.youtube.com/watch?v=Y_9t3eQFmU4&ab_channel=GCFLearnFree.org" ><i class="fab fa-youtube"></i> Computer Science Basics: Sequences, Selections, and Loops 2:30</a></p>  <br>
+         <p> <a target="_blank" href="https://www.youtube.com/watch?v=_y-5nZAbgt4&ab_channel=Codexpanse" ><i class="fab fa-youtube"></i> What Is Abstraction in Computer Science 6:20</a></p>  <br>
+         <p> <a target="_blank" href="https://computersciencewiki.org/index.php/Abstraction" ><i class="fas fa-pencil-alt"></i>  Abstraction (computer science) </a></p>  <br>
+      </div>
+    </div> <!-- cd-faq__content -->
+  </li>
+
+  <li class="cd-faq__item">
+    <a class="cd-faq__trigger" href="#0"><span><img
+          src="assets/images/cmd-svg.svg"
+          alt="some random tech svn image"
+          height="60"
+          width="60" /> Command prompt(terminal) basics </span></a>
+    <div class="cd-faq__content">
+      <div class="text-component">
+        <details>
+            <summary>do i need this?</summary>
+            <p> Yes you do. Using command prompt is mandatory for using things like npm,composer, installing Laravel and so on, which you will use later on. One more thing: it is really easy, so relax and learn it.  </p>
+        </details>
+         <p> windows: <a target="_blank" href="https://www.digitalcitizen.life/command-prompt-how-use-basic-commands/" ><i class="fas fa-pencil-alt"></i>  Command Prompt: 11 basic commands you should know | digitalcitizen.life </a></p>
+         <p> mac: <a target="_blank" href="https://macpaw.com/how-to/use-terminal-on-mac#:~:text=To%20open%20it%2C%20either%20open,background%20open%20on%20your%20desktop." ><i class="fas fa-pencil-alt"></i>  How to use the Terminal command line in macOS | macpaw.com </a></p>
+      </div>
+    </div> <!-- cd-faq__content -->
+  </li>
+
+  </ul> <!-- cd-faq__group -->
+
+
+    <ul id="free_mentor" class="cd-faq__group">
+      <li class="cd-faq__title"><h2> Free mentor </h2></li>
+      <li class="cd-faq__item">
+        <a class="cd-faq__trigger" href="#0"><span><img
+              src="assets/images/undraw_geniuses_9h9g.svg"
+              alt="some random tech svn image"
+              height="60"
+              width="60" /> free programming mentor for you </span></a>
+        <div class="cd-faq__content">
+          <div class="text-component">
+            <p>Having a  mentor can be really helpful, both to mentor and the mentee(the one who is learning), it may help you to build your potfolio,fix your weaknesses,find a job etc. We highly recommend finding one(or more!)</p>
+          <p>If you want you can get a free mentor at : <a target="_blank" href="https://www.pushfar.com/">pushfar</a></p>
+          </div>
+        </div> <!-- cd-faq__content -->
+      </li>
+
+    </ul> <!-- cd-faq__group -->
+
+  <ul id="HTML_CSS_JS" class="cd-faq__group">
+    <li class="cd-faq__title"><h2>HTML, CSS, JS</h2></li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"> <span><img
+            src="assets/images/undraw_building_websites_i78t.svg"
+            alt="hhh"
+            height="60"
+            width="60" /> HTML, CSS and JavaScript </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p> Choose either one of the 3 things below,or you can watch more than one tutorial series, just make sure to not get stuck in "tutorial hell" and to actually code and make websites and do a lot of exercising. </p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=5g0x2xv3aHU&t=8362s&ab_channel=CS50" ><i class="fab fa-youtube"></i> HTML, CSS, JavaScript CS50 </a></p>  <br>
+          <p> playlists:</p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=hu-q2zYwEYs&list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G&ab_channel=TheNetNinja" ><i class="fab fa-youtube"></i> The Net Ninja playlist (follow allong) </a></p>  <br>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=TKYsuU86-DQ&list=PL0eyrZgxdwhwNC5ppZo_dYGVjerQY3xYU&ab_channel=DaniKrossing" ><i class="fab fa-youtube"></i> HTML and CSS Dani Krossing playlist(follow allong) </a></p>  <br>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_static_website_0107.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> css </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=D-h8L5hgW-w&ab_channel=DesignCourse" ><i class="fab fa-youtube"></i> HTML and CSS Tutorial for 2021 - COMPLETE Crash Course! 2:18:00 </a></p>
+          <p> (optional) <a target="_blank" href="https://www.youtube.com/watch?v=7kVeCqQCxlk&ab_channel=CodingTech" ><i class="fab fa-youtube"></i>  CSS Grid Changes EVERYTHING - Amazing Presentation 32:00 </a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_font_kwpk.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> Crash courses</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=yfoY53QXEnI&ab_channel=TraversyMedia"><i class="fab fa-youtube"></i> CSS Crash Course For Absolute Beginners | Traversy Media 1:25:00 </a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_Mobile_feed_re_72ta.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> Project based </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=PlxWf493en4&ab_channel=freeCodeCamp.org" ><i class="fab fa-youtube"></i> HTML Tutorial - How to Make a Super Simple Website | freeCodeCamp 32:30 </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=5bMdjkfvONE&ab_channel=Udemy" ><i class="fab fa-youtube"></i> HTML5 & CSS Development: Learn How to Build a Professional Website | Udemy 1:38:00 </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=Wm6CUkswsNw&ab_channel=TraversyMedia" ><i class="fab fa-youtube"></i> Build An HTML5 Website With A Responsive Layout| Traversy Media 1:01:00 </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=X1dz0xRbSJc&ab_channel=TraversyMedia" ><i class="fab fa-youtube"></i> Build a Modern Landing Page Website | HTML & CSS| Traversy Media 1:15:00 </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=moBhzSC455o&ab_channel=TraversyMedia" ><i class="fab fa-youtube"></i> Build a Responsive Grid CSS Website Layout From Scratch | Traversy Media 46:00 </a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_book_lover_mkck.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> Books:<br> </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p> <i class="fas fa-book"></i> The book<a target="_blank" href="https://github.com/getify/You-Dont-Know-JS/tree/1st-ed#titles">  You Don’t Know JS (YDKJS)</a> is free on GitHub, and explains how Javascript works “under the hood”. If you ever wondered why javascript works the way it does, this book is for you! </p>
+          📚 HTML and CSS: Design and Build Websites, by Jon Duckett <br>
+          📚 Web designing books by Nick Pettit <br>
+          📚 The Essential Guide to CSS and HTML Web Design, by Craig Grannell <br>
+          📚 Smashing CSS, by Eric Meyer <br>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_book_lover_mkck.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> Paid Courses??? maybe?:<br> </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p> <a target="_blank" href="udemy.com" ><i class="fab fa-youtube"></i> udemy </a></p>  <br>
+
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+  </ul> <!-- cd-faq__group -->
+
+
+  <ul id="JAVASCRIPT" class="cd-faq__group">
+    <li class="cd-faq__title"><h2>JAVASCRIPT</h2></li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_task_list_6x9d.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> Introduction to JavaScript </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web"> <i class="fas fa-pencil-alt"></i> JavaScript basics | MDN </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=C9Oax_TQaok&ab_channel=AndySterkowitz" ><i class="fab fa-youtube"></i> Javascript Explained! Javascript PRIMER video for beginners. | Andy Sterkowitz 15:20 </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=hdI2bqOjy3c&ab_channel=TraversyMedia" ><i class="fab fa-youtube"></i> JavaScript Crash Course For Beginners | Traversy Media 1:40:00 </a></p>
+          <p> <a target="_blank" href="https://javascript.info/" > <i class="fas fa-pencil-alt"></i> JavaScript | javascript.info </a></p>
+          <p> <a target="_blank" href="https://www.w3schools.com/howto/howto_js_copy_clipboard.asp"> <i class="fas fa-pencil-alt"></i> How TO - Copy Text to Clipboard | w3schools </a></p>
+          <p> <a target="_blank" href="https://www.w3schools.com/howto/howto_html_clear_input.asp"> <i class="fas fa-pencil-alt"></i> How TO - Clear Input Field | w3schools </a></p>
+
+          <p> or - playlists: </p>
+          <p> You don't have to watch it and follow it until the end because your goal shouldn't be to master javascript but php, which is your main objective in this course. </p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=9M4XKi25I2M&list=PL_c9BZzLwBRLVh9OdCBYFEql6esA6aRsi&ab_channel=CalebCurry" ><i class="fab fa-youtube"></i> JavaScript Programming All-in-One Tutorial Series (9 HOURS!) | Caleb Curry </a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_Code_typing_re_p8b9.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" />  AJAX </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p> Not really essential but highly recommended and useful </p>
+          <p> This might be confusing at first, don't worry and try again. </p>
+          <p> W3schools have a lot of examples on this one, use them! </p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=82hnvUYY6QA&t=868s&ab_channel=TraversyMedia" ><i class="fab fa-youtube"></i> AJAX Crash Course (Vanilla JavaScript)  | Traversy Media 1:10:00 </a></p>
+          <p> or </p>
+          <p> <a target="_blank" href="https://www.w3schools.com/js/js_ajax_intro.asp" ><i class="fas fa-pencil-alt"></i> AJAX  | w3schools </a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_task_list_6x9d.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> JavaScript books </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          📕 Eloquent JavaScript <br>
+          📕 JavaScript: The good parts <br>
+          📕 Learn JavaScript visually <br>
+          📕 JavaScript: The definitive guide <br>
+          📕 A smarter way to learn JavaScript <br>
+          📕 You Don't Know JS <br>
+          📕 Effective JavaScript <br>
+          📕 Speaking JavaScript <br>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+  </ul> <!-- cd-faq__group -->
+
+
+  <ul id="BOOTSTRAP" class="cd-faq__group">
+    <li class="cd-faq__title"><h2> bootstrap </h2></li>
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_Account_re_o7id.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> Bootstrap </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p> Spend no more than 3 days learning this technology(library in fact). It is very easy and useful for developers to use.. it is mostly copy paste, especially in the beginning ,but it really makes a difference in productivity.  </p>
+          <p> Learn things like how to center content in bootstrap with one class, how to do margins, how columns work and stuff like that </p>
+          <p> <a target="_blank" href="https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/#:~:text=The%20technical%20difference%20between%20a,in%20charge%20of%20the%20flow." ><i class="fas fa-pencil-alt"></i> The Difference Between a Framework and a Library | freeCodeCamp </a></p>
+          <p> <a target="_blank" href="https://www.cloudflare.com/en-gb/learning/cdn/what-is-a-cdn/" ><i class="fas fa-pencil-alt"></i> What is a CDN? | How do CDNs work? | Cloudflare </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=5GcQtLDGXy8&ab_channel=TraversyMedia" ><i class="fab fa-youtube"></i> Bootstrap Beginner Crash Course | Traversy Media 1:13:00 </a></p>
+          <p> <a target="_blank" href="https://getbootstrap.com/docs/4.6/getting-started/introduction/" ><i class="fas fa-pencil-alt"></i> Bootstrap official site </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=SsEn0hlKDKA&ab_channel=TraversyMedia" ><i class="fab fa-youtube"></i> Should You Learn Bootstrap in 2020?| Traversy Media 08:43 </a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+  </ul> <!-- cd-faq__group -->
+
+  <ul id="GIT" class="cd-faq__group">
+    <li class="cd-faq__title"><h2> GIT </h2></li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_Code_thinking_re_gka2.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> Version control</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p> <a target="_blank" href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control" ><i class="fas fa-pencil-alt"></i> Getting-Started-About-Version-Control | git </a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_Code_thinking_re_gka2.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> GIT basics </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <details>
+              <summary>why this lesson</summary>
+              <p> Git is used for saving (making snapshots of your project in time) and easily sharing the code with other people and that is really important for working in any field that has something to do with the web. </p>
+          </details>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=mVnZVw4KJnc&ab_channel=Academind" ><i class="fab fa-youtube"></i> GitHub Tutorial for Beginners | The Basics | Academind 19:00 </a></p>
+          <p> <a target="_blank" href="https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/" ><i class="fas fa-pencil-alt"></i>  Learn the Basics of Git in Under 10 Minutes | freeCodeCamp </a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+
+  </ul> <!-- cd-faq__group -->
+
+  <ul id="SEO" class="cd-faq__group">
+    <li class="cd-faq__title"><h2> SEO </h2></li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_Data_trends_re_2cdy.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> Quick SEO </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <details>
+              <summary>why this lesson</summary>
+              <p>The purpose of a website is not to make a website but to serve some more important purpose like making money,creating interest and so on.. and one of the things that will help that is SEO </p>
+          </details>
+          <p> <a target="_blank" href="https://developers.google.com/search/docs/beginner/seo-starter-guide" ><i class="fas fa-pencil-alt"></i>  Search Engine Optimization (SEO) Starter Guide | developers.google.com </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=-B58GgsehKQ&list=WL&index=2&ab_channel=Fireship" ><i class="fab fa-youtube"></i> SEO for Developers | Fireship 12:00 </a></p>
+          <p> <a target="_blank" href="https://www.searchenginejournal.com/10-important-2021-seo-trends-you-need-to-know/389395/" ><i class="fas fa-pencil-alt"></i>  S10 Important 2021 SEO Trends You Need to Know </a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+  </ul> <!-- cd-faq__group -->
+
+  <ul id="PHP" class="cd-faq__group">
+    <li class="cd-faq__title"><h2>PHP</h2></li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_two_factor_authentication_namy.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> General programming </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p> More about programming in general. </p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=azcrPFhaY9k&ab_channel=CodingTech" ><i class="fab fa-youtube"></i> How To Think Like A Programmer 1:00:00 </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=6Ciml5ZlXJU&list=WL&index=4&ab_channel=TraversyMedia" ><i class="fab fa-youtube"></i> My Opinion On Pre-Made Templates | Traversy Media 09:00 </a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_source_code_xx2e.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> PHP & MySQL a lot in one place </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=qVU3V0A05k8&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&ab_channel=DaniKrossing" ><i class="fab fa-youtube"></i> PHP Programming | Dani Krossing </a>  </p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=qVU3V0A05k8&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&ab_channel=DaniKrossing" ><i class="fab fa-youtube"></i> 1: Introduction to PHP Programming | Dani Krossing 05:30 </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=zlCwveRcyKQ&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=3&ab_channel=DaniKrossing" ><i class="fab fa-youtube"></i> 3: Output In Browser Using PHP | Dani Krossing 07:00 </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=CoorcqbkpI0&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=4&ab_channel=DaniKrossing" ><i class="fab fa-youtube"></i> 4: How to Create PHP Variables | Dani Krossing 07:30 </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=pHxBA2ZbHis&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=5&ab_channel=DaniKrossing" ><i class="fab fa-youtube"></i> 5: How to Write Comments in PHP | Dani Krossing 02:00 </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=kByr0ifju4k&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=6&ab_channel=DaniKrossing" ><i class="fab fa-youtube"></i> 6: What Are Internal Functions in PHP | Dani Krossing 06:10 </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=ZPM8M9jzjjc&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=7&ab_channel=DaniKrossing" ><i class="fab fa-youtube"></i> 7: Different Data Types in PHP  | Dani Krossing 06:50 </a></p>
+          <p> And so on, complete the whole course above with the Dani Krossing(formerly mmtuts); it would be great to have all that code in one folder so you could come back later and revisit and maybe use it as a template or code snippet, it will save you quite a time</p>
+          <p>If you maybe can't understand Dani when he talks about OOP, first try in a couple of days to understand the basic principles that OOP is based on, you can do that by watching him explain it over and over again slowly with the persons example, or go and read the resource below. Don't worry, OOP is usualy tough when you are coming from a procedural background, its all okay :) </p>
+          <p><a target="_blank" href="https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/"><i class="fas fa-pencil-alt"></i> How to explain object-oriented programming concepts to a 6-year-old </a></p>
+                  <br>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=dlGtSoigdB0&ab_channel=ProgrammingKnowledge" ><i class="fab fa-youtube"></i> How to Create RESTful API in PHP | RESTful API With PHP & MySQL  | ProgrammingKnowledge 1:44:00 </a></p>
+
+          <p> Something more interesting, learn a bit about CMS's and their use in the industry, it is not mandatory that you look into this but it would be useful. </p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=XBCLrNCKDbE&ab_channel=StefanMischook" ><i class="fab fa-youtube"></i> Should Web Developers FEAR Wix? | Stefan Mischook 8:00 </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=IxpxQ62Im14&ab_channel=DesignCourse" ><i class="fab fa-youtube"></i> WordPress 5 Crash Course for Absolute Beginners | DesignCourse 55:00 </a></p>
+<br><br>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=9TycLR0TqFA&ab_channel=Uzility"> <i class="fas fa-pencil-alt"></i> Introduction to Scrum | Uzility 07:50 </a>(important)</p>
+          <p> <a target="_blank" href="https://www.freecodecamp.org/news/php-get-url-how-to-get-the-full-url-of-the-current-page/"> <i class="fas fa-pencil-alt"></i> PHP Get URL – How to Get the Full URL of the Current Page </a></p>
+          <p> <a target="_blank" href="https://thefullstack.xyz/dry-yagni-kiss-tdd-soc-bdfu" > <i class="fas fa-pencil-alt"></i> KISS, DRY, YAGNI and More. The 7 Acronyms Every Developer Should Know | thefullstack.xyz </a></p>
+
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+  </ul> <!-- cd-faq__group -->
+
+  <ul id="MYSQL" class="cd-faq__group">
+    <li class="cd-faq__title"><h2>MYSQL</h2></li>
+
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_server_cluster_jwwq.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> Database basics</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p><a target="_blank" href="https://www.youtube.com/watch?v=wR0jg0eQsZA&ab_channel=Lucidchart"><i class="fab fa-youtube"></i> Database Tutorial for Beginners | Lucidchart 5:30</a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=MBgfGIpODZ4&t=487s&ab_channel=TonyAlicea" ><i class="fab fa-youtube"></i> Don't Imitate, Understand #1 - What Is A Relational Database? | Tony Alicea 15:30 </a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_dev_focus_b9xo.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> Mysql a lot in one place</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p> The reason we are having this resource is.... </p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=PvwdiEL-bRs&list=PL_c9BZzLwBRJ55lLw8PdPlTVblIlPKfX5&index=17&ab_channel=CalebCurry" ><i class="fab fa-youtube"></i> MySQL All-in-One Quick Concepts Tutorial Series | Caleb Curry 2:53:00 </a></p>
+          <p><a target="_blank" href="https://www.mysqltutorial.org/"><i class="fas fa-pencil-alt"></i> The best website for learning Mysql ,completely free,no registration required</a></p>
+          <p><a target="_blank" href="https://www.youtube.com/watch?v=7S_tz1z_5bA"><i class="fab fa-youtube"></i> MySQL Tutorial for Beginners [Full Course] | Programming with Mosh
+  3:10:00</a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span>More than just MySQL</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <details>
+              <summary>why this lesson</summary>
+              <p> This serves to open your mind and teach you that there are many more ways to handle data  </p>
+          </details>
+          <p><a target="_blank" href="https://www.youtube.com/watch?v=ZS_kXvOeQ5Y&ab_channel=Academind"><i class="fab fa-youtube"></i> SQL vs NoSQL or MySQL vs MongoDB | Academind 21:30 </a></p>
+          <p><a target="_blank" href="https://www.youtube.com/watch?v=W2Z7fbCLSTw&ab_channel=Fireship"><i class="fab fa-youtube"></i> 7 Database Paradigms | Fireship 09:50 </a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span>Crash Course</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+              <p> Btw ,the proper way to pronounce mysql is 'majeskjuel' :))) </p>
+          <p><a target="_blank" href="https://www.youtube.com/watch?v=9ylj9NR0Lcg&ab_channel=TraversyMedia"><i class="fab fa-youtube"></i> MySQL Crash Course | Learn SQL 1:11:00</a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+  </ul> <!-- cd-faq__group -->
+
+
+    <ul id="coding_challenge_platforms" class="cd-faq__group">
+      <li class="cd-faq__title"><h2> Coding Challenge Platforms </h2></li>
+      <li class="cd-faq__item">
+        <a class="cd-faq__trigger" href="#0"><span><img
+              src="assets/images/undraw_lightbulb_moment_evxr.svg"
+              alt="some random tech svn image"
+              height="60"
+              width="60" /> Coding Challenge Platforms </span></a>
+        <div class="cd-faq__content">
+          <div class="text-component">
+            <p> From time to time,and it may be useful for you to just look into this sites and play a little bit, algorithms may prove useful in the future, especially for technicall interviews :) </p>
+            <p><a target="_blank" href="https://leetcode.com/">leetcode-  paid </a></p>
+            <p><a target="_blank" href="https://www.codingame.com/start">codingame - free </a></p>
+            <p><a target="_blank" href="https://exercism.io/">exercism - free </a></p>
+
+          </div>
+        </div> <!-- cd-faq__content -->
+      </li>
+
+    </ul> <!-- cd-faq__group -->
+
+  <ul id="php_framework" class="cd-faq__group">
+    <li class="cd-faq__title"><h2> Framework : Laravel</h2></li>
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_Code_review_re_woeb.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> Framework : Laravel </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+
+          <!-- <details>
+              <summary>why learn framework when i already know a lot vanilla php? </summary>
+              <p> This serves to open your mind and teach you that there are many more ways to handle data  </p>
+          </details> -->
+
+          <details>
+              <summary> prerequisites </summary>
+              <p> Be sure to know a lot about php and to be able to create at least login system or something like a webshop, it is not smart to learn php and mysql while learning any php framework. Also, you will have to understand MVC pattern and routing. </p>
+          </details>
+
+          <p><a target="_blank" href="https://www.youtube.com/watch?v=ImtZ5yENzgE&ab_channel=freeCodeCamp.org"><i class="fab fa-youtube"></i> Laravel PHP Framework Tutorial | freeCodeCamp </a></p>
+          <p><a target="_blank" href="https://laravel.com/docs/8.x"><i class="fas fa-pencil-alt"></i> Laravel documentation </a></p>
+          <p><a target="_blank" href="https://laravel-news.com/"><i class="fas fa-pencil-alt"></i> Laravel news | (not only news but it is cool)</a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+  </ul> <!-- cd-faq__group -->
+
+
+  <ul id="cool_things" class="cd-faq__group">
+    <li class="cd-faq__title"><h2>cool things</h2></li>
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_lightbulb_moment_evxr.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> cool things</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p><a target="_blank" href="https://dev.to/denicmarko/css-tips-you-won-t-see-in-most-tutorials-2ke9"><i class="fas fa-pencil-alt"></i> CSS Tips you won't see in most tutorials | Hashnode </a></p>
+          <p> <a target="_blank" href="https://denic.hashnode.dev/css-typing-effect" ><i class="fas fa-pencil-alt"></i> create a typing effect with zero JavaScript | Hashnode </a></p>
+          <p> <a target="_blank" href="https://zerossl.com/" ><i class="fas fa-pencil-alt"></i> Free SSL Sertificate </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=SKXkC4SqtRk&ab_channel=TraversyMedia" ><i class="fab fa-youtube"></i> GitHub Pages Deploy & Domain - Free hosting and domain </a></p>
+          <p> <a target="_blank" href="https://denic.hashnode.dev/javascript-secrets" ><i class="fas fa-pencil-alt"></i> JavaScript Secrets | hashnode </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=4YOpILi9Oxs&ab_channel=Fireship" ><i class="fab fa-youtube"></i> 7 Security Risks and Hacking Stories for Web Developers| Fireship </a></p>
+          <p> <a target="_blank" href="https://error404.fun/" ><i class="fas fa-pencil-alt"></i> Royalty free illustrations for  404 pages |  </a></p>
+          <p> <a target="_blank" href="https://usesmash.com/" ><i class="fas fa-pencil-alt"></i> Awesome illustration constructor with colorful and trendy characters |  </a></p>
+          <p> <a target="_blank" href="https://carbon.now.sh/" ><i class="fas fa-pencil-alt"></i> Create and share beautiful images of your source code. |  </a></p>
+          <p> <a target="_blank" href="https://fontspark.app/" ><i class="fas fa-pencil-alt"></i> generate fonts until you like it  |  </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=nVO-rYcef4A&ab_channel=TraversyMedia" ><i class="fab fa-youtube"></i> Tips For Getting Clients | Web Development | Traversy Media </a></p>
+          <p> <a target="_blank" href="https://www.ucraft.com/free-logo-maker" ><i class="fas fa-pencil-alt"></i> Free logo maker  |  </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=0dgmeTy7X3I&ab_channel=CodingTech" ><i class="fab fa-youtube"></i> Worst JavaScript Flaws That Hackers Love To Abuse| Coding Tech 23:30 </a></p>
+
+
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+  </ul> <!-- cd-faq__group -->
+
+  <ul id="job_part" class="cd-faq__group">
+    <li class="cd-faq__title"><h2> Job part </h2></li>
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_Reading_list_re_bk72.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> Job part </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p> <a target="_blank" href="https://www.theodinproject.com/courses/getting-hired" ><i class="fas fa-pencil-alt"></i> How to get hired | theodinproject </a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=ebJ0XBOjowo&ab_channel=TraversyMedia" ><i class="fab fa-youtube"></i> Finding A Web Developer Job With No Experience | Traversy Media 18:30</a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=1zNqPO2LCQk&ab_channel=StefanMischook" ><i class="fab fa-youtube"></i> How to Get your First Web Developer Job IN 2021? | Stefan Mischook 08:20</a></p>
+          <p> <a target="_blank" href="https://www.youtube.com/watch?v=SKHXYeowAIM&ab_channel=TraversyMedia" ><i class="fab fa-youtube"></i> Concerns & Struggles Of A Web Developer | Coding Tech 28:10</a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+  </ul> <!-- cd-faq__group -->
+
+  <ul id="other_things" class="cd-faq__group">
+    <li class="cd-faq__title"><h2> Besides programming </h2></li>
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_adventure_map_hnin.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> Besides programming </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <details>
+              <summary> why this section? </summary>
+              <p> Life is not only about programming, and actually learning about some other fields and practical things can prove useful in the future, not only for the programming but the other important aspects of life such as health, wealth, love and happiness. </p>
+              <p> One more answer: why not? </p>
+          </details>
+        <p> <a target="_blank" href="https://www.youtube.com/watch?v=rrIYNRuX6GM&t=1899s&ab_channel=Workforce" ><i class="fab fa-youtube"></i> Deep Work: Rules for Focused Success in a Distracted World | Workforce 53:30
+        <p> <a target="_blank" href="https://www.youtube.com/watch?v=zaKKQ10Di38&ab_channel=TheSwedishInvestor" ><i class="fab fa-youtube"></i> RICH DAD POOR DAD SUMMARY (BY ROBERT KIYOSAKI) | The Swedish Investor 09:09
+        <p> <a target="_blank" href="https://www.youtube.com/watch?v=Wu29ji8LVKY" ><i class="fab fa-youtube"></i> Do Not Use Debit Cards, Frank Abagnale 04:05
+        <p> <a target="_blank" href="https://www.youtube.com/watch?v=5MuIMqhT8DM" ><i class="fab fa-youtube"></i> Sleep is your superpower | Matt Walker | Ted Talks 19:18
+        <p> <a target="_blank" href="https://www.youtube.com/watch?v=ZwEquW_Yij0&ab_channel=TimFerriss" ><i class="fab fa-youtube"></i> How to Speed Read | Tim Ferriss 09:40
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+  </ul> <!-- cd-faq__group -->
+
+  </div> <!-- cd-faq__items -->
+
+  <a target="_blank" href="#0" class="cd-faq__close-panel text-replace">Close</a>
+
+  <div class="cd-faq__overlay" aria-hidden="true"></div>
+  </section> <!-- cd-faq -->
+
+    <div class="footer-basic">
+           <footer>
+                   <div class="text-center">
+                     <a href="index.html"><img src="assets/images/pexels-markus-spiske-6212801.jpg" height="140" width="190" alt="some html and css code" class="mb-3 footer-image"></a>
+                   </div>
+             <div class="social"><a href="https://www.instagram.com/ltcode_com/"><i class="icon ion-social-instagram"></i></a><a href=""><i class="icon ion-social-twitter"></i></a></div>
+               <ul class="list-inline">
+                   <li class="list-inline-item"><a href="index.html">Home</a></li>
+                   <li class="list-inline-item"><a href="donate.html">Support us</a></li>
+                   <li class="list-inline-item"><a href="termsAndConditions.html">Terms</a></li>
+                   <li class="list-inline-item"><a href="privacyPolicy.html">Privacy Policy</a></li>
+               </ul>
+               <p class="copyright"> <a href="https://www.linkedin.com/in/djordje-milicevic-82a009166/" target="blank">Djordje Milicevic</a> © 2021 All rights reserved</p>           </footer>
+       </div>
+
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

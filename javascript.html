@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title> Javascript curriculum </title>
+  <style>
+    h2 {
+      color:black !important;
+      font-size: 17px !important;
+    }
+    #you_wish {
+      font-weight: bold;
+    }
+    details{
+      margin-bottom: 16px;
+    }
+    details p {
+      margin-left: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-left: 20px;">
+      <a class="navbar-brand" href="index.html"><img src="assets/images/favicon.ico" alt="home" width="50" height="50"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link important" href="donate.html">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="exercises.html">Exercises</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quiz.html">Quiz</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link important dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Choose path
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="webIntro.html">web dev intro - basics</a>
+            <a class="dropdown-item" href="javascript.html">JavaScript development</a>
+            <a class="dropdown-item" href="phpLong.html">PHP long intro</a>
+            <a class="dropdown-item" href="phpShort.html">PHP short intro</a>
+          </div>
+        </li>
+
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="resources.html">Resources</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br><br>
+  <section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
+    <div class="mobile text-center">
+      <h2> The mentor i wish i had</h2>
+      <p id="you_wish">You wish you found us earlier.</p>
+      <br>
+    <h2 style="font-size:30px !important; color:black !important" class="mb-3"> JavaScript Web Development curriculum</h2>
+    </div>
+  <ul class="cd-faq__categories">
+  <li><a  class="cd-faq__category truncate" href="#first_things_first"> First things first </a></li>
+    <li><a  class="cd-faq__category truncate" href="#foundations"> foundations </a></li>
+  <li><a class="cd-faq__category truncate" href="#free_mentor"> Get a free mentor </a></li>
+  <li><a  class="cd-faq__category truncate" href="#JAVASCRIPT"> JAVASCRIPT </a></li>
+  <li><a  class="cd-faq__category truncate" href="#cool_things">Cool things</a></li>
+  <li><a class="cd-faq__category truncate" href="#other_things"> Besides programming </a></li>
+  </ul> <!-- cd-faq__categories -->
+
+  <div class="cd-faq__items">
+    <div class="desktop text-center">
+      <h2> The mentor i wish i had</h2>
+      <p id="you_wish">You wish you found us earlier.</p>
+      <br>
+    <h2 style="font-size:30px !important; color:black !important"> JavaScript Web Development curriculum</h2>
+    </div>
+  <ul id="first_things_first" class="cd-faq__group">
+  <li class="cd-faq__title"><h2>Before starting</h2></li>
+
+  <li class="cd-faq__item">
+
+    <a class="cd-faq__trigger" href="#0"><span>  About this course </span></a>
+    <div class="cd-faq__content">
+      <div class="text-component">
+
+        <details>
+            <summary> about </summary>
+            <p> This course is about building websites and applications using javascript as basics for frontend and backend programming and some of the most important related technologies, such as html, css and NodeJs. </p>
+            <p> We have made this path by pulling the best resources from around the web and combining them in a unique way, to help ease this incredible journey for you. </p>
+            <p> JavaScript is one of the most used programming langauges in the world today, and will continue to dominate the field of web programming for at least a couple of years,so, learn js :) </p>
+        </details>
+
+        <details>
+            <summary> prerequisites </summary>
+            <p> You need to know English :D, have a basic knowledge of computers, how to type et cetera.  No big deal, if you know some of the things below feel free to skip them.</p>
+        </details>
+
+        <details>
+            <summary>what should i know after this</summary>
+            <p> After completing most of the stuff that is in our curriculum and of course, doing the coding part yourself, you will be able to build static and dynamic websites, to build stuff like login systems, simple social media sites, basics of command line use and so on. You will do that by using JavaScript and its frameworks and libraries. </p>
+        </details>
+
+        <details>
+            <summary>how much time to complete</summary>
+            <p> Obviously it depends on how much time you spend each day blabla,but rougly speaking, but if you spend about 3.5 hours each day on learning and coding, it shouldn't take much more than 10-11 months to complete most of this course </p>
+        </details>
+
+      </div>
+    </div> <!-- cd-faq__content -->
+  </li>
+
+  <li class="cd-faq__item">
+    <a class="cd-faq__trigger" href="#0"><span>   <img
+          src="assets/images/undraw_Web_search_re_efla.svg"
+          alt="some random tech svn image"
+          height="60"
+          width="60" /> How to Google like a pro</span></a>
+    <div class="cd-faq__content">
+      <div class="text-component">
+
+        <details>
+            <summary>why this lesson</summary>
+            <p>Using the search engines such as Google,Opera,Mozilla etc. ,the right way and finding the most relevant results for your query is one of the most important and easy skills to learn in the 21.century and you,as a future software developer, will benefit greatly from learning it</p>
+        </details>
+
+        <details>
+            <summary>what should i know after this</summary>
+            <p> After finishing this section about searching online, you should be able to google like a pro:) </p>
+        </details>
+
+        <p><a target="_blank" href="https://www.youtube.com/watch?v=R0DQfwc72PM&ab_channel=EpicTutorialsforiOS%26AndroidFilmmaking"  rel=”noreferrer”> <i class="fab fa-youtube"></i> How To Google Like A Pro! Top 10 Google Search Tips & Tricks 5:40</a> </p>
+        <p><a target="_blank" href="https://denic.hashnode.dev/use-google-like-a-pro?guid=none&deviceId=f5082b83-4f93-4f46-b798-a5ac621e873d"  rel=”noreferrer”> <i class="fas fa-pencil-alt"></i> use google like a pro</a></p>
+
+      </div>
+    </div> <!-- cd-faq__content -->
+  </li>
+
+  </ul> <!-- cd-faq__group -->
+
+  <ul id="foundations" class="cd-faq__group">
+    <li class="cd-faq__title"><h2> Foundations </h2></li>
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span><img
+            src="assets/images/undraw_building_websites_i78t.svg"
+            alt="some random tech svn image"
+            height="60"
+            width="60" /> Foundations </span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+        <p> <a target="_blank" href="https://www.theodinproject.com/courses/foundations"> they are cool </a></p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+
+  </ul> <!-- cd-faq__group -->
+
+      <ul id="free_mentor" class="cd-faq__group">
+        <li class="cd-faq__title"><h2> Free mentor </h2></li>
+
+        <li class="cd-faq__item">
+          <a class="cd-faq__trigger" href="#0"><span><img
+                src="assets/images/undraw_geniuses_9h9g.svg"
+                alt="some random tech svn image"
+                height="60"
+                width="60" /> free programming mentor for you </span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p>Having a  mentor can be really helpful, both to mentor and the mentee(the one who is learning), it may help you to build your potfolio,fix your weaknesses,find a job etc. We highly recommend finding one(or more!)</p>
+            <p>If you want you can get a free mentor at : <a target="_blank" href="https://www.pushfar.com/">pushfar</a></p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+
+      </ul> <!-- cd-faq__group -->
+    <ul id="JAVASCRIPT" class="cd-faq__group">
+      <li class="cd-faq__title"><h2>JAVASCRIPT</h2></li>
+
+      <li class="cd-faq__item">
+        <a class="cd-faq__trigger" href="#0"><span><img
+              src="assets/images/undraw_task_list_6x9d.svg"
+              alt="some random tech svn image"
+              height="60"
+              width="60" /> JavaScript </span></a>
+        <div class="cd-faq__content">
+          <div class="text-component">
+            <p> Just go to <a target="_blank" href="https://www.theodinproject.com/courses/javascript">odinproject </a> :) , they have a great js course </p>
+            <p> Additional material for deep understanding of JavaScript: </p>
+            <p> <a target="_blank" href="https://www.youtube.com/watch?v=Bv_5Zv5c-Ts&ab_channel=TonyAlicea" ><i class="fab fa-youtube"></i> JavaScript: Understanding the Weird Parts - The First 3.5 Hours | Tony Alicea</a></p>
+            <p> <a target="_blank" href="https://www.youtube.com/watch?v=fyGSyqEX2dw&t=385s&ab_channel=TonyAlicea" ><i class="fab fa-youtube"></i> Don't Imitate, Understand #2 - Promises, Async, and Await | Tony Alicea </a></p>
+            <p> <a target="_blank" href="https://www.youtube.com/watch?v=4KHiSt0oLJ0&list=WL&index=1&ab_channel=Nick%27sStrengthandPower" ><i class="fab fa-youtube"></i>CORS in 100 Seconds | Fireship </a></p>
+            <p><a target="_blank" href="https://betterprogramming.pub/why-is-0-1-0-2-not-equal-to-0-3-in-most-programming-languages-99432310d476"  rel=”noreferrer”> <i class="fas fa-pencil-alt"></i> Why is 0.1 + 0.2 Not Equal to 0.3 in Most Programming Languages? | betterprogramming.pub </a></p>
+            <p> <a target="_blank" href="https://denic.hashnode.dev/javascript-secrets" ><i class="fas fa-pencil-alt"></i> JavaScript Secrets | hashnode </a></p>
+            <p> <a target="_blank" href="https://www.youtube.com/watch?v=0dgmeTy7X3I&ab_channel=CodingTech" ><i class="fab fa-youtube"></i> Worst JavaScript Flaws That Hackers Love To Abuse| Coding Tech 23:30 </a></p>
+          </div>
+        </div> <!-- cd-faq__content -->
+      </li>
+
+    </ul> <!-- cd-faq__group -->
+
+
+
+      <ul id="cool_things" class="cd-faq__group">
+        <li class="cd-faq__title"><h2>cool things</h2></li>
+        <li class="cd-faq__item">
+          <a class="cd-faq__trigger" href="#0"><span><img
+                src="assets/images/undraw_lightbulb_moment_evxr.svg"
+                alt="some random tech svn image"
+                height="60"
+                width="60" /> cool things</span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p><a target="_blank" href="https://dev.to/denicmarko/css-tips-you-won-t-see-in-most-tutorials-2ke9"><i class="fas fa-pencil-alt"></i> CSS Tips you won't see in most tutorials | Hashnode </a></p>
+              <p> <a target="_blank" href="https://denic.hashnode.dev/css-typing-effect" ><i class="fas fa-pencil-alt"></i> create a typing effect with zero JavaScript | Hashnode </a></p>
+              <p> <a target="_blank" href="https://zerossl.com/" ><i class="fas fa-pencil-alt"></i> Free SSL Sertificate </a></p>
+              <p> <a target="_blank" href="https://www.youtube.com/watch?v=SKXkC4SqtRk&ab_channel=TraversyMedia" ><i class="fab fa-youtube"></i> GitHub Pages Deploy & Domain - Free hosting and domain </a></p>
+              <p> <a target="_blank" href="https://www.youtube.com/watch?v=4YOpILi9Oxs&ab_channel=Fireship" ><i class="fab fa-youtube"></i> 7 Security Risks and Hacking Stories for Web Developers| Fireship </a></p>
+              <p> <a target="_blank" href="https://error404.fun/" ><i class="fas fa-pencil-alt"></i> Royalty free illustrations for  404 pages |  </a></p>
+              <p> <a target="_blank" href="https://usesmash.com/" ><i class="fas fa-pencil-alt"></i> Awesome illustration constructor with colorful and trendy characters |  </a></p>
+              <p> <a target="_blank" href="https://carbon.now.sh/" ><i class="fas fa-pencil-alt"></i> Create and share beautiful images of your source code. |  </a></p>
+              <p> <a target="_blank" href="https://fontspark.app/" ><i class="fas fa-pencil-alt"></i> generate fonts until you like it  |  </a></p>
+              <p> <a target="_blank" href="https://www.youtube.com/watch?v=nVO-rYcef4A&ab_channel=TraversyMedia" ><i class="fab fa-youtube"></i> Tips For Getting Clients | Web Development | Traversy Media </a></p>
+              <p> <a target="_blank" href="https://www.ucraft.com/free-logo-maker" ><i class="fas fa-pencil-alt"></i> Free logo maker  |  </a></p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+
+      </ul> <!-- cd-faq__group -->
+
+
+        <ul id="other_things" class="cd-faq__group">
+          <li class="cd-faq__title"><h2> Besides programming </h2></li>
+          <li class="cd-faq__item">
+            <a class="cd-faq__trigger" href="#0"><span><img
+                  src="assets/images/undraw_adventure_map_hnin.svg"
+                  alt="some random tech svn image"
+                  height="60"
+                  width="60" /> Besides programming </span></a>
+            <div class="cd-faq__content">
+              <div class="text-component">
+                <details>
+                    <summary> why this section? </summary>
+                    <p> Life is not only about programming, and actually learning about some other fields and practical things can prove useful in the future, not only for the programming but the other important aspects of life such as health, wealth, love and happiness. </p>
+                    <p> One more answer: why not? </p>
+                </details>
+              <p> <a target="_blank" href="https://www.youtube.com/watch?v=rrIYNRuX6GM&t=1899s&ab_channel=Workforce" ><i class="fab fa-youtube"></i> Deep Work: Rules for Focused Success in a Distracted World | Workforce 53:30
+              <p> <a target="_blank" href="https://www.youtube.com/watch?v=zaKKQ10Di38&ab_channel=TheSwedishInvestor" ><i class="fab fa-youtube"></i> RICH DAD POOR DAD SUMMARY (BY ROBERT KIYOSAKI) | The Swedish Investor 09:09
+              <p> <a target="_blank" href="https://www.youtube.com/watch?v=Wu29ji8LVKY" ><i class="fab fa-youtube"></i> Do Not Use Debit Cards, Frank Abagnale 04:05
+              <p> <a target="_blank" href="https://www.youtube.com/watch?v=5MuIMqhT8DM" ><i class="fab fa-youtube"></i> Sleep is your superpower | Matt Walker | Ted Talks 19:18
+              <p> <a target="_blank" href="https://www.youtube.com/watch?v=ZwEquW_Yij0&ab_channel=TimFerriss" ><i class="fab fa-youtube"></i> How to Speed Read | Tim Ferriss 09:40
+              </div>
+            </div> <!-- cd-faq__content -->
+          </li>
+
+        </ul> <!-- cd-faq__group -->
+
+  </ul> <!-- cd-faq__group -->
+
+
+  </div> <!-- cd-faq__items -->
+
+  <a target="_blank" href="#0" class="cd-faq__close-panel text-replace">Close</a>
+
+  <div class="cd-faq__overlay" aria-hidden="true"></div>
+  </section> <!-- cd-faq -->
+
+    <div class="footer-basic">
+           <footer>
+                   <div class="text-center">
+                     <a href="index.html"><img src="assets/images/pexels-markus-spiske-6212801.jpg" height="140" width="190" alt="some html and css code" class="mb-3 footer-image"></a>
+                   </div>
+             <div class="social"><a href="https://www.instagram.com/ltcode_com/"><i class="icon ion-social-instagram"></i></a><a href=""><i class="icon ion-social-twitter"></i></a></div>
+               <ul class="list-inline">
+                   <li class="list-inline-item"><a href="index.html">Home</a></li>
+                   <li class="list-inline-item"><a href="donate.html">Support us</a></li>
+                   <li class="list-inline-item"><a href="termsAndConditions.html">Terms</a></li>
+                   <li class="list-inline-item"><a href="privacyPolicy.html">Privacy Policy</a></li>
+               </ul>
+               <p class="copyright"> <a href="https://www.linkedin.com/in/djordje-milicevic-82a009166/" target="blank">Djordje Milicevic</a> © 2021 All rights reserved</p>           </footer>
+       </div>
+
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

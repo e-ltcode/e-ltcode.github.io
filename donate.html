@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title> Support our cause </title>
+
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-left: 20px;">
+      <a class="navbar-brand" href="index.html"><img src="assets/images/favicon.ico" alt="home" width="50" height="50"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link important" href="donate.html">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="exercises.html">Exercises</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quiz.html">Quiz</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link important dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Choose path
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="webIntro.html">web dev intro - basics</a>
+            <a class="dropdown-item" href="javascript.html">JavaScript development</a>
+            <a class="dropdown-item" href="phpLong.html">PHP long intro</a>
+            <a class="dropdown-item" href="phpShort.html">PHP short intro</a>
+          </div>
+        </li>
+
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="resources.html">Resources</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="text-center">
+<h3 class="mb-4 mt-3"> Help us do more</h3>
+<img src="assets/images/pexels-cottonbro-4709285.jpg" height="400" width="500" alt="photo of boy learning to code" class="mb-3">
+<p class="mb-3">ltcode is a highly efficient way to learn how to code.</p>
+
+<p class="mb-3">When you donate to ltcode, you help people learn new skills and provide for their families.</p>
+
+<p class="mb-3"> You also help us create new resources(quizes, exercises, new paths) for you to use to expand your own technology skills. </p>
+<img src="assets/images/pexels-thisisengineering-3861943.jpg" height="400" width="500" alt="photo of a woman teaching APIs" class="mb-4">
+<br>
+  <form action="https://www.paypal.com/paypalme/djordjeMilicevic01" method="get" class="mb-4">
+
+      <!-- Display the payment button. -->
+      <input type="image" name="submit"
+      src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+      alt="Donate">
+      <img alt="" width="1" height="1"
+      src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+
+  </form>
+<p class="mb-3">or</p>
+bank account :  <input type="text" value="205-9001025618962-88" id="myInput">
+<button onclick="myFunction()" class="mt-3 mb-5">Copy to clipboard</button>
+</div>
+
+  <div class="footer-basic">
+         <footer>
+                 <div class="text-center">
+                   <a href="index.html"><img src="assets/images/pexels-markus-spiske-6212801.jpg" height="140" width="190" alt="some html and css code" class="mb-3 footer-image"></a>
+                 </div>
+           <div class="social"><a href="https://www.instagram.com/ltcode_com/"><i class="icon ion-social-instagram"></i></a><a href=""><i class="icon ion-social-twitter"></i></a></div>
+             <ul class="list-inline">
+                 <li class="list-inline-item"><a href="index.html">Home</a></li>
+                 <li class="list-inline-item"><a href="donate.html">Support us</a></li>
+                 <li class="list-inline-item"><a href="termsAndConditions.html">Terms</a></li>
+                 <li class="list-inline-item"><a href="privacyPolicy.html">Privacy Policy</a></li>
+             </ul>
+             <p class="copyright"> <a href="https://www.linkedin.com/in/djordje-milicevic-82a009166/" target="blank">Djordje Milicevic</a> © 2021 All rights reserved</p>           </footer>
+     </div>
+
+       <script>
+       function myFunction() {
+         var copyText = document.getElementById("myInput");
+         copyText.select();
+         copyText.setSelectionRange(0, 99999)
+         document.execCommand("copy");
+       }
+       </script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
