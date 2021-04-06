@@ -4100,6 +4100,15 @@ margin-bottom:0;
 	height: 210px;
 	width: 260px;
 }
+.just-code {
+	height: 220px;
+	width: 265px;
+}
+.apis-photo {
+	height: 220px;
+	width: 265px;
+}
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -4108,4 +4117,11 @@ margin-bottom:0;
 	display:none;
 }
 
+}
+a {
+	text-decoration: none;
+}
+.bold {
+	font-weight: bold;
+	color: black !important;
 }
