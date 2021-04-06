@@ -4096,6 +4096,10 @@ margin-bottom:0;
 .desktop {
 	display: none;
 }
+.boy-image {
+	height: 210px;
+	width: 260px;
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -4103,4 +4107,5 @@ margin-bottom:0;
 .mobile {
 	display:none;
 }
+
 }
