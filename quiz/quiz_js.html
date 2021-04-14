@@ -9,7 +9,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
-    <title> HTML quiz with free learning resources </title>
+    <title> JavaScript quiz with free learning resources </title>
 <link rel="stylesheet" href="style.css">
 
   </head>
@@ -36,7 +36,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="quiz_html.html">html quiz - easy </a>
                 <a class="dropdown-item" href="quiz_css.html">css quiz - easy </a>
-                <a class="dropdown-item" href="quiz_js.html">javascript quiz - easy </a>
+
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -73,7 +73,7 @@
 
             <button id="submit">Submit Quiz</button>
             <div id="results" class="mb-3"></div>
-  <div id="more-resources">
+  <!-- <div id="more-resources">
             <details>
               <summary>Resources for these questions:</summary>
 
@@ -92,7 +92,7 @@
                   </div>
 
             </details>
-</div>
+</div> -->
 
   </div>
   <a href="#top">  <i  class="fas fa-arrow-up fa-lg"></i> </a>
@@ -100,7 +100,6 @@
     <a href="https://track.fiverr.com/visit/?bta=224600&nci=9820" Target="_blank"><img border="0" src="https://fiverr.ck-cdn.com/tn/serve/?cid=11670080"  width="250" height="250"></a>
 </div>
 </div>
-
 <div class="footer-basic">
        <footer>
                <div class="text-center">
@@ -193,96 +192,101 @@ const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 const myQuestions = [
   {
-    question: "1. Favicon dimensions are ___",
+    question: "1. Javascript is __",
     answers: {
-      a: "100*100px",
-      b: "10vh",
-      c: "16 *16px",
-      d: "45*53px"
-    },
-    correctAnswer: "c"
-  },
-  {
-    question: "2.Starting and ending tags in html are known as ___",
-    answers: {
-      a: "Opening and closing",
-      b: "Begg and end",
-      c: "<<  and >>"
-    },
-    correctAnswer: "a"
-  },
-  {
-    question: "3. One statement is true, which one?",
-    answers: {
-      a: "HTML, as a basics of modern web development, is used for desktop apps as well",
-      b: "A link does not have to be text. A link can be an image or any other HTML element",
-      c: "Practically speaking, HTML is and should be used alone, without any external stylings.",
-      d: "The most important attribute of the &lt;a&gt; element is the class attribute"
-    },
-    correctAnswer: "b"
-  },
-  {
-    question: "4. We can add headers in html tables using __ tag",
-    answers: {
-      a: "&lt;th&gt;",
-      b: "&lt;header&gt;",
-      c: "&lt;theader&gt;"
-    },
-    correctAnswer: "a"
-  },
-  {
-    question: "5. The value attribute is associated with which set of tags?",
-    answers: {
-      a: "&#x3C;button&#x3E;&#x3C;input&#x3E;&#x3C;form&#x3E;",
-      b: "&#x3C;input&#x3E;&#x3C;label&#x3E;&#x3C;meter&#x3E;",
-      c: "&#x3C;input&#x3E;&#x3C;option&#x3E;&#x3C;textarea&#x3E;",
-      d: " &#x3C;li&#x3E;&#x3C;input&#x3E;&#x3C;option&#x3E;"
+      a: "A programming language made for building desktop applications",
+      b: "The slowest programming language",
+      c: "The fastest programming language",
+      d: "A programming language made mostly for the web"
     },
     correctAnswer: "d"
   },
   {
-    question: "6. By default and without any external stylings what is the biggest heading of these below?",
+    question: "2. Javascript is __",
     answers: {
-      a: "&#x3C;h2 class=&#x22;small-heading&#x22;&#x3E;",
-      b: "&#x3C;heading1&#x3E;",
-      c: "&#x3C;h3 id=&#x22;big-heading&#x22;&#x3E;",
-      d: "&#x3C;H3&#x3E;"
+      a: "Very  slow",
+      b: "Very popular",
+      c: "Compliled"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "3. Javascript ___",
+    answers: {
+      a: " Accepts both double and single quotes",
+      b: "Is the same as PHP",
+      c: "Is the most important language for writting SQL queries",
+
     },
     correctAnswer: "a"
   },
   {
-    question: "7. HTML headings are also called headers",
+    question: "ECMAScript is the official name of this language",
     answers: {
-      a: "Yes",
-      b: "No"
+      a: "yes",
+      b: "no"
     },
-    correctAnswer: "b"
+    correctAnswer: "a"
   },
   {
-    question: "8. Paragraphs range __",
+    question: "5. Javascript code is written inside __ tag",
     answers: {
-      a: "from p1 to p6 ,same as headings",
-      b: "there is only one tag for paragraphs and it is p"
+      a: "&lt;javascript&gt;",
+      b: "&lt;body&gt;",
+      c: "&lt;script&gt;",
+      d: "&lt;head&gt;"
     },
-    correctAnswer: "b"
+    correctAnswer: "c"
   },
   {
-    question: "9.What is true",
+    question: "6. Which operator returns true if the two compared values are not equal?",
     answers: {
-      a: "h1 is smaller than h6",
-      b: "h1 is bigger than h3",
-      c: "h1 is by default bigger than h6",
-      d: "all of the above"
+      a: "&lt;&gt;",
+      b: "~",
+      c: "==!",
+      d: "!=="
     },
-    correctAnswer: "b"
+    correctAnswer: "d"
   },
   {
-    question: "10.Case sensitive means that, for example &#x27;&#x3C;h2&#x3E;&#x27; and &#x27;&#x3C;H2&#x3E;&#x27; are the same",
+    question: "7. What is the correct syntax for referring to an external script called xxx.js",
     answers: {
-      a: "Yes ",
-      b: "No"
+      a: "&lt;script src=&quot;xxx.js&quot;&gt;&lt;/script&gt;",
+      b: "&lt;script name=&quot;xxx.js&quot;&gt;&lt;/script&gt;",
+      c: "&lt;script href=&quot;xxx.js&quot;&gt;&lt;/script&gt;"
+
     },
-    correctAnswer: "b"
+    correctAnswer: "a"
+  },
+  {
+    question: "8. console.log(' 10%3 ') will print __ to the console",
+    answers: {
+      a: "NaN",
+      b: "13",
+      c: "1",
+      d: "7"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "9. What is the result of the following code " + '<br>' + "typeof(+ '1')",
+    answers: {
+      a: "string",
+      b: "undefined aray",
+      c: "number ",
+      d: "special string"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "10.  You declare a variable using __ keyword and __ stands for assignment operator in javascript ",
+    answers: {
+      a: "var and = ",
+      b: "let and -",
+      c: "const and eq.",
+      d: "$ and == "
+    },
+    correctAnswer: "a"
   }
 ];
 
