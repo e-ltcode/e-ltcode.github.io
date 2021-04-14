@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title> HTML quiz with free learning resources </title>
+<link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-left: 20px;">
+        <a class="navbar-brand" href="../index.html"><img src="../assets/images/favicon.ico" alt="home" width="50" height="50"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link important" href="../donate.html">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../exercises.html">Exercises</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link important dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Quizes
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="quiz_html.html">html quiz - easy </a>
+                <a class="dropdown-item" href="quiz_css.html">css quiz - easy </a>
+
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link important dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Choose path
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../webIntro.html">web dev intro - basics</a>
+                <a class="dropdown-item" href="../javascript.html">JavaScript development</a>
+                <a class="dropdown-item" href="../phpLong.html">PHP long intro</a>
+                <a class="dropdown-item" href="../phpShort.html">PHP short intro</a>
+              </div>
+            </li>
+
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+              <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../resources.html">Resources</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class="container mb-5 mt-5">
+  <a href="#more-resources">  <i  id="top" class="fas fa-arrow-down fa-lg"></i> </a>
+
+  <div class="text-center mt-3">
+
+              <div id="quiz"></div>
+
+            <button id="submit">Submit Quiz</button>
+            <div id="results" class="mb-3"></div>
+  <div id="more-resources">
+            <details>
+              <summary>Resources for these questions:</summary>
+
+                  <div class="mt-2 mb-2">
+                    <p>1. <a target="_blank" href="https://en.wikipedia.org/wiki/Favicon" ><i class="fas fa-pencil-alt"></i>  Favicons | developers.google.com </a></p>
+                    <p>2. <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" ><i class="fas fa-pencil-alt"></i>  HTML basics | MDN </a></p>
+                    <p>3. <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" ><i class="fas fa-pencil-alt"></i>  HTML basics | MDN </a></p>
+                    <p>4. <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics" ><i class="fas fa-pencil-alt"></i>  HTML tables | MDN </a></p>
+                    <p>5. <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" ><i class="fas fa-pencil-alt"></i> HTML Attributes | MDN </a></p>
+                    <p>6. <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" ><i class="fas fa-pencil-alt"></i>  HTML basics | MDN </a></p>
+                    <p>7.. <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" ><i class="fas fa-pencil-alt"></i>  HTML basics | MDN </a></p>
+                    <p>8. <a target="_blank" href="https://www.w3schools.com/tags/tag_p.asp" ><i class="fas fa-pencil-alt"></i>  &lt;p&gt; tag HTML </a></p>
+                    <p>9. <a target="_blank" href="https://www.w3schools.com/tags/tag_hn.asp#:~:text=The%20to%20%3Ch6,subject%20for%20the%20whole%20page." ><i class="fas fa-pencil-alt"></i>  &lt;h1&gt; to &lt;h6&gt; HTML </a></p>
+                    <p>10. <a target="_blank" href="https://www.computerhope.com/jargon/c/casesens.htm" ><i class="fas fa-pencil-alt"></i>  case sensitive meaning </a></p>
+
+                  </div>
+
+            </details>
+</div>
+
+  </div>
+  <a href="#top">  <i  class="fas fa-arrow-up fa-lg"></i> </a>
+
+</div>
+
+<div class="footer-basic">
+       <footer>
+               <div class="text-center">
+                 <a href="https://designmodo.com/startup/?u=4281" rel="nofollow" title="Startup Framework by Designmodo" target="_blank"><img class="mb-3 designmodo" src="../assets/images/affiliate/startup-bootstrap-builder.jpg" border="0"  width="280" height="230" alt="Startup Framework by Designmodo" /></a>
+                   </div>
+         <div class="social"><a href="https://www.instagram.com/ltcode_com/"><i class="icon ion-social-instagram"></i></a><a href=""><i class="icon ion-social-twitter"></i></a></div>
+           <ul class="list-inline">
+               <li class="list-inline-item"><a href="index.html">Home</a></li>
+               <li class="list-inline-item"><a href="donate.html">Support us</a></li>
+               <li class="list-inline-item"><a href="termsAndConditions.html">Terms</a></li>
+               <li class="list-inline-item"><a href="privacyPolicy.html">Privacy Policy</a></li>
+           </ul>
+           <p class="copyright"> <a href="https://www.linkedin.com/in/djordje-milicevic-82a009166/" target="blank">Djordje Milicevic</a> © 2021 All rights reserved</p>           </footer>
+   </div>
+  <script type="text/javascript">
+  (function(){
+function buildQuiz(){
+  // variable to store the HTML output
+  const output = [];
+
+  // for each question...
+  myQuestions.forEach(
+    (currentQuestion, questionNumber) => {
+
+      // variable to store the list of possible answers
+      const answers = [];
+
+      // and for each available answer...
+      for(letter in currentQuestion.answers){
+
+        // ...add an HTML radio button
+        answers.push(
+          `<label>
+            <input type="radio" name="question${questionNumber}" value="${letter}">
+            ${letter} :
+            ${currentQuestion.answers[letter]}
+          </label>`
+        );
+      }
+
+      // add this question and its answers to the output
+      output.push(
+        `<div class="question"> ${currentQuestion.question} </div>
+        <div class="answers"> ${answers.join('')} </div>`
+      );
+    }
+  );
+
+  // finally combine our output list into one string of HTML and put it on the page
+  quizContainer.innerHTML = output.join('');
+}
+
+function showResults(){
+
+  // gather answer containers from our quiz
+  const answerContainers = quizContainer.querySelectorAll('.answers');
+
+  // keep track of user's answers
+  let numCorrect = 0;
+
+  // for each question...
+  myQuestions.forEach( (currentQuestion, questionNumber) => {
+
+    // find selected answer
+    const answerContainer = answerContainers[questionNumber];
+    const selector = `input[name=question${questionNumber}]:checked`;
+    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+    // if answer is correct
+    if(userAnswer === currentQuestion.correctAnswer){
+      // add to the number of correct answers
+      numCorrect++;
+
+      // color the answers green
+      answerContainers[questionNumber].style.color = 'lightgreen';
+    }
+    // if answer is wrong or blank
+    else{
+      // color the answers red
+      answerContainers[questionNumber].style.color = 'red';
+    }
+  });
+
+  // show number of correct answers out of total
+  resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+}
+
+const quizContainer = document.getElementById('quiz');
+const resultsContainer = document.getElementById('results');
+const submitButton = document.getElementById('submit');
+const myQuestions = [
+  {
+    question: "1. Favicon dimensions are ___",
+    answers: {
+      a: "100*100px",
+      b: "10vh",
+      c: "16 *16px",
+      d: "45*53px"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "2.Starting and ending tags in html are known as ___",
+    answers: {
+      a: "Opening and closing",
+      b: "Begg and end",
+      c: "<<  and >>"
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "3. One statement is true, which one?",
+    answers: {
+      a: "HTML, as a basics of modern web development, is used for desktop apps as well",
+      b: "A link does not have to be text. A link can be an image or any other HTML element",
+      c: "Practically speaking, HTML is and should be used alone, without any external stylings.",
+      d: "The most important attribute of the &lt;a&gt; element is the class attribute"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "4. We can add headers in html tables using __ tag",
+    answers: {
+      a: "&lt;th&gt;",
+      b: "&lt;header&gt;",
+      c: "&lt;theader&gt;"
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "5. The value attribute is associated with which set of tags?",
+    answers: {
+      a: "&#x3C;button&#x3E;&#x3C;input&#x3E;&#x3C;form&#x3E;",
+      b: "&#x3C;input&#x3E;&#x3C;label&#x3E;&#x3C;meter&#x3E;",
+      c: "&#x3C;input&#x3E;&#x3C;option&#x3E;&#x3C;textarea&#x3E;",
+      d: " &#x3C;li&#x3E;&#x3C;input&#x3E;&#x3C;option&#x3E;"
+    },
+    correctAnswer: "d"
+  },
+  {
+    question: "6. By default and without any external stylings what is the biggest heading of these below?",
+    answers: {
+      a: "&#x3C;h2 class=&#x22;small-heading&#x22;&#x3E;",
+      b: "&#x3C;heading1&#x3E;",
+      c: "&#x3C;h3 id=&#x22;big-heading&#x22;&#x3E;",
+      d: "&#x3C;H3&#x3E;"
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "7. HTML headings are also called headers",
+    answers: {
+      a: "Yes",
+      b: "No"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "8. Paragraphs range __",
+    answers: {
+      a: "from p1 to p6 ,same as headings",
+      b: "there is only one tag for paragraphs and it is p"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "9.What is true",
+    answers: {
+      a: "h1 is smaller than h6",
+      b: "h1 is bigger than h3",
+      c: "h1 is by default bigger than h6",
+      d: "all of the above"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "10.Case sensitive means that, for example &#x27;&#x3C;h2&#x3E;&#x27; and &#x27;&#x3C;H2&#x3E;&#x27; are the same",
+    answers: {
+      a: "Yes ",
+      b: "No"
+    },
+    correctAnswer: "b"
+  }
+];
+
+// Kick things off
+buildQuiz();
+
+// Event listeners
+submitButton.addEventListener('click', showResults);
+})();
+  </script>
+
+  </body>
+</html>
