@@ -29,6 +29,37 @@
     details p {
       margin-left: 14px;
     }
+
+        #scroll {
+            position:fixed;
+            right:10px;
+            bottom:10px;
+            cursor:pointer;
+            width:50px;
+            height:50px;
+            background-color:#3498db;
+            text-indent:-9999px;
+            display:none;
+            -webkit-border-radius:60px;
+            -moz-border-radius:60px;
+            border-radius:60px
+        }
+        #scroll span {
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-left:-8px;
+            margin-top:-12px;
+            height:0;
+            width:0;
+            border:8px solid transparent;
+            border-bottom-color:#ffffff;
+        }
+        #scroll:hover {
+            background-color:#b23ad6;
+            opacity:1;filter:"alpha(opacity=100)";
+            -ms-filter:"alpha(opacity=100)";
+        }
   </style>
 </head>
 <body>
@@ -343,7 +374,7 @@
       </ul> <!-- cd-faq__group -->
 
   </div> <!-- cd-faq__items -->
-
+<a href="#" id="scroll" style="display: none;"><span></span></a>
   <a target="_blank" href="#0" class="cd-faq__close-panel text-replace">Close</a>
 
   <div class="cd-faq__overlay" aria-hidden="true"></div>
@@ -366,5 +397,6 @@
 
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="back_to_top.js"></script>
 </body>
 </html>

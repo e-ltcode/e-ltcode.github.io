@@ -18,9 +18,38 @@
       color:black !important;
       font-size: 17px !important;
     }
+    #scroll {
+        position:fixed;
+        right:10px;
+        bottom:10px;
+        cursor:pointer;
+        width:50px;
+        height:50px;
+        background-color:#3498db;
+        text-indent:-9999px;
+        display:none;
+        -webkit-border-radius:60px;
+        -moz-border-radius:60px;
+        border-radius:60px
+    }
+    #scroll span {
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-left:-8px;
+        margin-top:-12px;
+        height:0;
+        width:0;
+        border:8px solid transparent;
+        border-bottom-color:#ffffff;
+    }
+    #scroll:hover {
+        background-color:#b23ad6;
+        opacity:1;filter:"alpha(opacity=100)";
+        -ms-filter:"alpha(opacity=100)";
+    }
   </style>
-  <script data-ad-client="ca-pub-1411008275584055" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- 0393C8EA-3AD8-4DF5-B22F-62F666D06CC8 -->
+
 </head>
 <body>
 
@@ -49,8 +78,6 @@
             <a class="dropdown-item" href="quiz/quiz_js.html">javascript quiz - easy </a>
             <a class="dropdown-item" href="quiz/quiz_php.html">php quiz - easy </a>
             <a class="dropdown-item" href="quiz/quiz_mysql.html">mysql quiz - easy </a>
-
-
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -106,7 +133,7 @@
   </div>
 </main>
 
-
+<a href="#" id="scroll" style="display: none;"><span></span></a>
 
 <div class="footer-basic">
        <footer>
@@ -123,6 +150,6 @@
            <p class="copyright"> <a href="https://www.linkedin.com/in/djordje-milicevic-82a009166/" target="blank">Djordje Milicevic</a> © 2021 All rights reserved</p>           </footer>
    </div>
 
-
+<script src="back_to_top.js"></script>
 </body>
 </html>
