@@ -1,114 +1,175 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="assets/images/favicon.ico" type="image/gif" sizes="16x16">
+  <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="assets/images/favicon.ico" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<title> products | e-ltcode </title>
+<link rel="stylesheet" href="assets/css/style.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<style>
+html{
+  scroll-behavior: smooth;
+}
 
-  <script>document.getElementsByTagName("html")[0].className += " js";</script>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title> Exercises </title>
-  <style>
-    h2 {
-      color:black !important;
-      font-size: 17px !important;
-    }
-    #you_wish {
-      font-weight: bold;
-    }
-    details{
-      margin-bottom: 16px;
-    }
-    #email {
-      text-decoration: underline;
-    }
-  </style>
+* {
+  box-sizing: border-box;
+}
+a:hover{
+  text-decoration: none;
+}
+.bold {
+  font-weight: bold;
+}
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#b23ad6;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+</style>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-left: 20px;">
+  <a class="navbar-brand" href="index.html"><img src="assets/images/favicon.ico" alt="home" width="50" height="50"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-left: 20px;">
-      <a class="navbar-brand" href="index.html"><img src="assets/images/favicon.ico" alt="home" width="50" height="50"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link important" href="product.html">Product</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="exercises.html">Exercises</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link important dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Quizzes
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="quiz/quiz_html.html">html quiz - easy </a>
-              <a class="dropdown-item" href="quiz/quiz_css.html">css quiz - easy </a>
-              <a class="dropdown-item" href="quiz/quiz_js.html">javascript quiz - easy </a>
-              <a class="dropdown-item" href="quiz/quiz_php.html">php quiz - easy </a>
-              <a class="dropdown-item" href="quiz/quiz_mysql.html">mysql quiz - easy </a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link important dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Choose path
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="webIntro.html">web dev intro - basics</a>
-              <a class="dropdown-item" href="javascript.html">JavaScript development</a>
-              <a class="dropdown-item" href="phpLong.html">PHP long intro</a>
-              <a class="dropdown-item" href="phpShort.html">PHP short intro</a>
-            </div>
-          </li>
-
-        </ul>
-        <div class="form-inline my-2 my-lg-0">
-            <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="resources.html">Resources</a>
-          </li>
-        </ul>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link important" href="product.html">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="exercises.html">Exercises</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link important dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Quizzes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="quiz/quiz_html.html">html quiz - easy </a>
+          <a class="dropdown-item" href="quiz/quiz_css.html">css quiz - easy </a>
+          <a class="dropdown-item" href="quiz/quiz_js.html">javascript quiz - easy </a>
+          <a class="dropdown-item" href="quiz/quiz_php.html">php quiz - easy </a>
+          <a class="dropdown-item" href="quiz/quiz_mysql.html">mysql quiz - easy </a>
         </div>
-      </div>
-    </nav>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link important dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Choose path
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="webIntro.html">web dev intro - basics</a>
+          <a class="dropdown-item" href="javascript.html">JavaScript development</a>
+          <a class="dropdown-item" href="phpLong.html">PHP long intro</a>
+          <a class="dropdown-item" href="phpShort.html">PHP short intro</a>
+        </div>
+      </li>
 
+    </ul>
+    <div class="form-inline my-2 my-lg-0">
+        <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="resources.html">Resources</a>
+      </li>
+    </ul>
+    </div>
+  </div>
+</nav>
 
+  <main class="text-center mt-5 " >
 
-      <main class="text-center">
-              <h1 class="mb-5 mt-2"> Under construction </h1>
-              <p class="mb-3" style="font-size:26px;"> Want this page to be built sooner? Consider <a href="product.html"> donating and help us: </a>   </p>
-              <p class="mb-3"> If you got any suggestions or things you would like to see, shoot us an email at <span id="email"> eltcode@gmail.com </span>, we would love to hear from you :) </p>
-              <img  src="assets/images/under-construction.jpg" alt="under construction" class="mb-5">
-      </main>
+     <p> HTML5 exercises with source code and assignments: </p>
+     <a href="https://payhip.com/b/el2c" class="payhip-buy-button" Favorite data-theme="green" data-product="el2c">Buy Now</a> <br><br>
 
-
-
-      <div class="footer-basic">
-             <footer>
-                     <div class="text-center">
-                       <a href="https://designmodo.com/startup/?u=4281" rel="nofollow" title="Startup Framework by Designmodo" target="_blank"><img class="mb-3 designmodo" src="assets/images/affiliate/startup-bootstrap-builder.jpg" border="0"  width="280" height="230" alt="Startup Framework by Designmodo" /></a>
-                         </div>
-               <div class="social"><a href="https://www.instagram.com/ltcode_com/"><i class="icon ion-social-instagram"></i></a><a href=""><i class="icon ion-social-twitter"></i></a></div>
-                 <ul class="list-inline">
-                     <li class="list-inline-item"><a href="index.html">Home</a></li>
-                     <li class="list-inline-item"><a href="product.html">Support us</a></li>
-                     <li class="list-inline-item"><a href="termsAndConditions.html">Terms</a></li>
-                     <li class="list-inline-item"><a href="privacyPolicy.html">Privacy Policy</a></li>
-                 </ul>
-                 <p class="copyright"> <a href="https://www.linkedin.com/in/djordje-milicevic-82a009166/" target="blank">Djordje Milicevic</a> © 2021 All rights reserved</p>           </footer>
-         </div>
-
+     <p> PHP - 7 Exercises for beginners to practice and develop their coding skills: </p>
+     <a href="https://payhip.com/b/oKhk" class="payhip-buy-button" data-theme="green" data-product="oKhk">Buy Now</a> <br><br>
+  </main>
 
 </body>
 </html>
